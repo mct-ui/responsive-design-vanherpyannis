@@ -2,6 +2,27 @@
   #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 200;
+    src: url("../fonts/hkgrotesk-light-webfont.woff2"),
+    url("../fonts/hkgrotesk-light-webfont.woff");
+}
+
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 400;
+    src: url("../fonts/hkgrotesk-regular-webfont.woff2 "),
+    url("../fonts/hkgrotesk-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 600;
+    src: url("../fonts/hkgrotesk-medium-webfont.woff2"),
+    url("../fonts/hkgrotesk-medium-webfont.woff");
+}
+
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -15,8 +36,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
-    color: #111;
+    font-family: "HK Grotesk Web", "sans-serif";
+    color: #202024;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,7 +57,7 @@ html {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #5051DB;
     color: white;
     text-shadow: none;
 }
@@ -66,18 +87,21 @@ h1 {
     font-size: 36px;
     line-height: 48px;
     margin: 0 0 24px;
+    font-weight: 200;
 }
 
 h2 {
     font-size: 32px;
     line-height: 40px;
     margin: 0 0 24px;
+    font-weight: 200;
 }
 
 h3 {
     font-size: 26px;
     line-height: 32px;
     margin: 0 0 24px;
+    font-weight: 200;
 }
 
 h4,
@@ -194,7 +218,7 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em; /* 90 * 16px = 1440px */
+    max-width: 1128px; /* 90 * 16px = 1440px */
 }
 
 /*
@@ -212,9 +236,9 @@ a:focus {
     flex-wrap: wrap;
 }
 
-    .o-layout__item {
-        flex-basis: 100%;
-    }
+.o-layout__item {
+    flex-basis: 100%;
+}
 
 /* gutter modifiers, these affect o-layout__item too */
 
@@ -415,33 +439,43 @@ a:focus {
     .u-1-of-2-bp1 {
         flex-basis: calc(100% / 2) !important;
     }
+
     .u-1-of-3-bp1 {
         flex-basis: calc(100% / 3) !important;
     }
+
     .u-2-of-3-bp1 {
         flex-basis: calc(100% / 3 * 2) !important;
     }
+
     .u-1-of-4-bp1 {
         flex-basis: calc(100% / 4) !important;
     }
+
     .u-3-of-4-bp1 {
         flex-basis: calc(100% / 4 * 3) !important;
     }
+
     .u-1-of-5-bp1 {
         flex-basis: calc(100% / 5) !important;
     }
+
     .u-2-of-5-bp1 {
         flex-basis: calc(100% / 5 * 2) !important;
     }
+
     .u-3-of-5-bp1 {
         flex-basis: calc(100% / 5 * 3) !important;
     }
+
     .u-4-of-5-bp1 {
         flex-basis: calc(100% / 5 * 4) !important;
     }
+
     .u-1-of-6-bp1 {
         flex-basis: calc(100% / 6) !important;
     }
+
     .u-5-of-6-bp1 {
         flex-basis: calc(100% / 6 * 5) !important;
     }
@@ -451,33 +485,43 @@ a:focus {
     .u-1-of-2-bp2 {
         flex-basis: calc(100% / 2) !important;
     }
+
     .u-1-of-3-bp2 {
         flex-basis: calc(100% / 3) !important;
     }
+
     .u-2-of-3-bp2 {
         flex-basis: calc(100% / 3 * 2) !important;
     }
+
     .u-1-of-4-bp2 {
         flex-basis: calc(100% / 4) !important;
     }
+
     .u-3-of-4-bp2 {
         flex-basis: calc(100% / 4 * 3) !important;
     }
+
     .u-1-of-5-bp2 {
         flex-basis: calc(100% / 5) !important;
     }
+
     .u-2-of-5-bp2 {
         flex-basis: calc(100% / 5 * 2) !important;
     }
+
     .u-3-of-5-bp2 {
         flex-basis: calc(100% / 5 * 3) !important;
     }
+
     .u-4-of-5-bp2 {
         flex-basis: calc(100% / 5 * 4) !important;
     }
+
     .u-1-of-6-bp2 {
         flex-basis: calc(100% / 6) !important;
     }
+
     .u-5-of-6-bp2 {
         flex-basis: calc(100% / 6 * 5) !important;
     }
@@ -487,33 +531,43 @@ a:focus {
     .u-1-of-2-bp3 {
         flex-basis: calc(100% / 2) !important;
     }
+
     .u-1-of-3-bp3 {
         flex-basis: calc(100% / 3) !important;
     }
+
     .u-2-of-3-bp3 {
         flex-basis: calc(100% / 3 * 2) !important;
     }
+
     .u-1-of-4-bp3 {
         flex-basis: calc(100% / 4) !important;
     }
+
     .u-3-of-4-bp3 {
         flex-basis: calc(100% / 4 * 3) !important;
     }
+
     .u-1-of-5-bp3 {
         flex-basis: calc(100% / 5) !important;
     }
+
     .u-2-of-5-bp3 {
         flex-basis: calc(100% / 5 * 2) !important;
     }
+
     .u-3-of-5-bp3 {
         flex-basis: calc(100% / 5 * 3) !important;
     }
+
     .u-4-of-5-bp3 {
         flex-basis: calc(100% / 5 * 4) !important;
     }
+
     .u-1-of-6-bp3 {
         flex-basis: calc(100% / 6) !important;
     }
+
     .u-5-of-6-bp3 {
         flex-basis: calc(100% / 6 * 5) !important;
     }
@@ -523,33 +577,43 @@ a:focus {
     .u-1-of-2-bp4 {
         flex-basis: calc(100% / 2) !important;
     }
+
     .u-1-of-3-bp4 {
         flex-basis: calc(100% / 3) !important;
     }
+
     .u-2-of-3-bp4 {
         flex-basis: calc(100% / 3 * 2) !important;
     }
+
     .u-1-of-4-bp4 {
         flex-basis: calc(100% / 4) !important;
     }
+
     .u-3-of-4-bp4 {
         flex-basis: calc(100% / 4 * 3) !important;
     }
+
     .u-1-of-5-bp4 {
         flex-basis: calc(100% / 5) !important;
     }
+
     .u-2-of-5-bp4 {
         flex-basis: calc(100% / 5 * 2) !important;
     }
+
     .u-3-of-5-bp4 {
         flex-basis: calc(100% / 5 * 3) !important;
     }
+
     .u-4-of-5-bp4 {
         flex-basis: calc(100% / 5 * 4) !important;
     }
+
     .u-1-of-6-bp4 {
         flex-basis: calc(100% / 6) !important;
     }
+
     .u-5-of-6-bp4 {
         flex-basis: calc(100% / 6 * 5) !important;
     }
@@ -605,16 +669,20 @@ a:focus {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     a,
     a:visited {
         text-decoration: underline;
     }
+
     a[href]:after {
         content: " (" attr(href) ")";
     }
+
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -623,14 +691,17 @@ a:focus {
     a[href^="javascript:"]:after {
         content: "";
     }
+
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -638,18 +709,28 @@ a:focus {
     thead {
         display: table-header-group;
     }
+
     tr,
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+
+@media (min-width: 768px) {
+    html{
+        font-size: 20px;
+        line-height: 1.6;
     }
 }
